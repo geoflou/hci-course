@@ -1,0 +1,40 @@
+body {
+    background-color: #098094;
+    font-family: sans-serif;
+}
+
+
+.top-bar {
+    border-top: 1px solid #EB6118;
+    background-color: black;
+    padding: 5 50;
+    color: white;
+}
+
+
+.nav-bar {
+    padding: 0;
+    background-color: #098094;
+    float: right;
+}
+
+.nav-elem {
+    color: white;
+    padding: 15;
+    font-size: medium;
+    font-weight: bold;
+    height: 100%;
+}
+
+.donate-btn {
+    background-color:#D14900 ;
+}
+
+.info-div {
+    padding: 30;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    background-color: #51534A;
+    color: white;
+}
