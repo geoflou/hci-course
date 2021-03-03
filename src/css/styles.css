@@ -30,6 +30,38 @@ body {
     background-color:#D14900 ;
 }
 
+
+.img-col {
+    padding: 40 5;
+}
+
+.text-content{
+    font-weight: bold;
+    padding: 40 5;
+}
+
+.sqr-btn {
+    color: #D14900;
+    padding: 5 10;
+    font-size: small;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid #D14900;
+}
+
+.non-border-btn {
+    color: #D14900;
+    padding: 5 10;
+    font-size: small;
+    font-weight: bold;
+    background-color: white;
+}
+
+.sqr-btn:hover {
+    background-color: #D14900;
+    color: white;
+}
+
 .info-div {
     padding: 30;
     text-align: center;
@@ -37,4 +69,16 @@ body {
     font-weight: bold;
     background-color: #51534A;
     color: white;
+}
+
+.arrow-ref{
+    color: #D14900;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 0%;
+}
+
+.arrow-ref:hover {
+    color: #D14900;
 }
