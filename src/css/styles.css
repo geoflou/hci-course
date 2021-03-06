@@ -14,17 +14,19 @@ body {
 
 .nav-bar {
     padding: 0;
-    background-color: #098094;
     float: right;
 }
 
 .nav-elem {
     color: white;
+    background-color: #098094;
     padding: 15;
     font-size: medium;
     font-weight: bold;
     height: 100%;
+    cursor: pointer;
 }
+
 
 .donate-btn {
     background-color:#D14900 ;
@@ -45,8 +47,20 @@ body {
 .corner-banner {
     position: absolute;
     background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: -15%;
+    left: -5%;
+    text-align: right;
     color: #00778B;
-    padding: 20;
+}
+
+.corner-text {
+    position: absolute;
+    text-align: left;
+    top: 40%;
+    left: 30%;
 }
 
 .main-banner {
