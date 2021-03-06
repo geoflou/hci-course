@@ -30,6 +30,87 @@ body {
     background-color:#D14900 ;
 }
 
+.info-btn {
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    background-color: #51534A;
+}
+
+.info-btn:hover {
+    color: white;
+    background-color: #43443e;
+}
+
+.corner-banner {
+    position: absolute;
+    background-color: white;
+    color: #00778B;
+    padding: 20;
+}
+
+.main-banner {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: white;
+}
+
+.no-ul-ref {
+    color: #D14915;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+.no-ul-ref:hover {
+    color: hsl(17, 84%, 36%);
+}
+
+.banner {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    color: white;
+    background-color: #098094;
+    padding: 10;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    left: 25%;
+    top: 25%;
+}
+
+.banner-btn {
+    position: absolute;
+    left: 80%;
+    top: 75%;
+}
+
+.banner-label {
+    position: absolute;
+    top: 30%;
+    left: 22.5%;
+}
+
+.arrow-btn {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 10;
+    border-radius: 50%;
+    border: 1px solid #D14900;
+}
+
+.arrow-btn:hover {
+    background-color: rgb(236, 236, 236);
+}
+.center-btn{
+    position:absolute;
+    color: white;
+    bottom: 12%;
+    right: 15%;
+}
+
 
 .img-col {
     padding: 40 5;
@@ -74,11 +155,32 @@ body {
 .arrow-ref{
     color: #D14900;
     text-decoration-line: none;
-    font-weight: bold;
     font-size: small;
+    font-weight: bold;
     margin-bottom: 0%;
 }
 
 .arrow-ref:hover {
     color: #D14900;
+}
+
+.image-ref{
+    color: #D14915;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+.image-ref:hover {
+    color: #D14900;
+}
+
+.image-label {
+    position: absolute;
+    color: white;
+    padding: 20;
+    bottom: 0;
+}
+
+.image-label:hover {
+    cursor: pointer;
 }
