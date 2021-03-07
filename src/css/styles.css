@@ -42,12 +42,6 @@ body {
     background-color:#D14900 ;
 }
 
-.info-btn {
-    font-size: small;
-    font-weight: bold;
-    color: white;
-    background-color: #51534A;
-}
 
 .info-btn:hover {
     color: white;
@@ -57,7 +51,7 @@ body {
 .mobile-btns {
     display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
     .mobile-btns {
         display: flex;
         position: absolute;
@@ -105,6 +99,25 @@ body {
     left: 30%;
 }
 
+@media screen and (max-width: 576px) {
+    .corner-header {
+        font-size: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .corner-header {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .corner-header {
+        font-size: 175%;
+    }
+}
+
+
 .main-banner {
     display: none;
 }
@@ -121,6 +134,7 @@ body {
 .screen-only-img {
     display: none;
 }
+
 @media only screen and (min-width: 992px) {
     .screen-only-img {
         display: block;
@@ -196,10 +210,32 @@ body {
     padding: 40 5;
 }
 
+.cntr-img {
+    width: 75%; 
+    float: right;
+}
 .text-content{
     font-weight: bold;
-    padding: 40 5;
+    padding: 40 5 40 20;
+} 
+
+@media only screen and (max-width: 768px) {
+    .cntr-img {
+        display: block;
+        float: none;
+        margin: auto;
+    }
+
+    .img-col {
+        padding: 50 5 20 5;
+    }
+
+    .text-content{
+        font-weight: bold;
+        padding: 10 20;
+    }
 }
+
 
 .sqr-btn {
     color: #D14900;
@@ -224,12 +260,49 @@ body {
 }
 
 .info-div {
-    padding: 30;
-    text-align: center;
-    font-size: small;
-    font-weight: bold;
-    background-color: #51534A;
-    color: white;
+    display: none;
+}
+
+.info-div-mobile {
+    display: flex;
+    padding: 20;
+    background-color: white;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .info-btn {
+        font-weight: bold;
+        width: 100%;
+        height: 40%;
+        color: white;
+        background-color: #51534A;
+        border: 2px solid #51534A;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .info-div {
+        display: block;
+        padding: 30;
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        background-color: #51534A;
+        color: white;
+    }
+
+    .info-div-mobile {
+        display: none;
+    }
+
+    .info-btn {
+        font-weight: bold;
+        color: white;
+        background-color: #51534A;
+    }
+    
 }
 
 .arrow-ref{
