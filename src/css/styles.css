@@ -5,16 +5,26 @@ body {
 
 
 .top-bar {
-    border-top: 1px solid #EB6118;
     background-color: black;
     padding: 5 50;
     color: white;
 }
-
+@media only screen and  (min-width: 992px) {
+    .top-bar {
+        border-top: 1px solid #EB6118;
+    }
+}
 
 .nav-bar {
-    padding: 0;
-    float: right;
+    display: none;
+}
+@media only screen and  (min-width: 992px) {
+
+    .nav-bar {
+        display: block;
+        padding: 0;
+        float: right;
+    }
 }
 
 .nav-elem {
@@ -44,11 +54,43 @@ body {
     background-color: #43443e;
 }
 
+.mobile-btns {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .mobile-btns {
+        display: flex;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+.srch-btn {
+    background-color: #D14900;
+    border: none;
+    color: white;
+    padding: 10;
+}
+
+.menu-btn {
+    color: #D14900;
+    padding: 5 10;
+    font-size: small;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+.menu-btn:hover {
+    background-color: #D14900;
+    color: white;
+}
+
 .corner-banner {
     position: absolute;
     background-color: white;
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    height: 50%;
     border-radius: 50%;
     top: -15%;
     left: -5%;
@@ -64,10 +106,25 @@ body {
 }
 
 .main-banner {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    color: white;
+    display: none;
+}
+@media only screen and  (min-width: 768px) {
+    .main-banner {
+        display: inline;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        color: white;
+    }
+}
+
+.screen-only-img {
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .screen-only-img {
+        display: block;
+    }
 }
 
 .no-ul-ref {
@@ -80,10 +137,11 @@ body {
     color: hsl(17, 84%, 36%);
 }
 
+
 .banner {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    height: 50%;
     color: white;
     background-color: #098094;
     padding: 10;
@@ -103,7 +161,7 @@ body {
 .banner-label {
     position: absolute;
     top: 30%;
-    left: 22.5%;
+    left: 25%;
 }
 
 .arrow-btn {
@@ -118,11 +176,19 @@ body {
 .arrow-btn:hover {
     background-color: rgb(236, 236, 236);
 }
-.center-btn{
-    position:absolute;
-    color: white;
-    bottom: 12%;
-    right: 15%;
+
+.center-btn {
+    display: none;
+}
+@media only screen and  (min-width: 992px){
+
+    .center-btn{
+        display: block;
+        position:absolute;
+        color: white;
+        bottom: 12%;
+        right: 15%;
+    }
 }
 
 
@@ -172,6 +238,11 @@ body {
     font-size: small;
     font-weight: bold;
     margin-bottom: 0%;
+}
+@media only screen and (max-width: 768px) {
+    .arrow-ref {
+        padding: 10;
+    }
 }
 
 .arrow-ref:hover {
