@@ -105,6 +105,12 @@ body {
     }
 }
 
+@media screen and (min-width: 577px) {
+    .corner-header {
+        font-size: 75%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .corner-header {
         font-size: 100%;
@@ -114,6 +120,15 @@ body {
 @media screen and (min-width: 992px) {
     .corner-header {
         font-size: 175%;
+    }
+}
+
+.main-banner-mobile {
+    display: none;
+}
+@media only screen and  (max-width: 552px) {
+    .main-banner-mobile {
+        display: inline;
     }
 }
 
@@ -128,6 +143,17 @@ body {
         top: 50%;
         left: 20%;
         color: white;
+    }
+
+    @media screen and (max-width: 990px) {
+
+        #main-p {
+            font-size: 75%;
+        }
+
+        #main-a {
+            font-size: 75%;
+        }
     }
 }
 
@@ -153,29 +179,102 @@ body {
 
 
 .banner {
-    position: absolute;
-    width: 25%;
-    height: 50%;
+    width: 250px;
+    height: 200px;
     color: white;
     background-color: #098094;
     padding: 10;
-    border-radius: 50%;
     align-content: center;
     text-align: center;
-    left: 25%;
-    top: 25%;
+
 }
 
 .banner-btn {
+    display: none;
     position: absolute;
-    left: 80%;
+    left: 60%;
     top: 75%;
 }
 
 .banner-label {
     position: absolute;
-    top: 30%;
-    left: 25%;
+    left: 32.5%;
+    top: 20%;
+}
+
+.triangle {
+    position: absolute;
+    left: 41.5%;
+    bottom: -10%;
+    width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid #098094;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        width: 250px;
+        height: 250px;
+        color: white;
+        background-color: #098094;
+        border-radius: 50%;
+
+    }
+
+    .banner-btn {
+        display: inline;
+        position: absolute;
+        left: 60%;
+        top: 75%;
+    }
+
+    .banner-label {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 992px){
+    .banner {
+        position: absolute;
+        width: 25%;
+        height: 50%;
+        color: white;
+        background-color: #098094;
+        padding: 10;
+        border-radius: 50%;
+        align-content: center;
+        text-align: center;
+        left: 25%;
+        top: 25%;
+    }
+
+    .banner-btn {    
+        display: inline;
+        position: absolute;
+        left: 80%;
+        top: 75%;
+    }
+
+    .banner-label {
+        position: absolute;
+        top: 30%;
+        left: 22.5%;
+    }
+
+    .triangle {
+        display: none;
+    }
+
 }
 
 .arrow-btn {
